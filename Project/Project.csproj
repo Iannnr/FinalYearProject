@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A7013D3-CE30-4C47-B25F-E46A5D8D51D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Project.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeScreenSize.cs" />
+    <Compile Include="Interfaces\Add Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Add Coach.Designer.cs">
+      <DependentUpon>Add Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Add Customer Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Add Customer Details.Designer.cs">
+      <DependentUpon>Add Customer Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseContext.cs" />
+    <Compile Include="dateTimePicker1\Value.cs" />
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\DeleteCustomer.Designer.cs">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Logging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Logging.Designer.cs">
+      <DependentUpon>Logging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\RemoveCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\RemoveCoach.Designer.cs">
+      <DependentUpon>RemoveCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602140810587_initialCreation.cs" />
+    <Compile Include="Migrations\201602140810587_initialCreation.Designer.cs">
+      <DependentUpon>201602140810587_initialCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602140829301_initialCreation-addedplayerstomatch.cs" />
+    <Compile Include="Migrations\201602140829301_initialCreation-addedplayerstomatch.Designer.cs">
+      <DependentUpon>201602140829301_initialCreation-addedplayerstomatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602140854117_addedCourtNumber.cs" />
+    <Compile Include="Migrations\201602140854117_addedCourtNumber.Designer.cs">
+      <DependentUpon>201602140854117_addedCourtNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602140903302_removedCourtId.cs" />
+    <Compile Include="Migrations\201602140903302_removedCourtId.Designer.cs">
+      <DependentUpon>201602140903302_removedCourtId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602140932310_pleaseworkCourtNumber.cs" />
+    <Compile Include="Migrations\201602140932310_pleaseworkCourtNumber.Designer.cs">
+      <DependentUpon>201602140932310_pleaseworkCourtNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602141157242_fixedAddMatch.cs" />
+    <Compile Include="Migrations\201602141157242_fixedAddMatch.Designer.cs">
+      <DependentUpon>201602141157242_fixedAddMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602141500315_AddedMatchTimeVariables.cs" />
+    <Compile Include="Migrations\201602141500315_AddedMatchTimeVariables.Designer.cs">
+      <DependentUpon>201602141500315_AddedMatchTimeVariables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602151035414_removeddatetime.cs" />
+    <Compile Include="Migrations\201602151035414_removeddatetime.Designer.cs">
+      <DependentUpon>201602151035414_removeddatetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602151126540_CalendarViewUpdates.cs" />
+    <Compile Include="Migrations\201602151126540_CalendarViewUpdates.Designer.cs">
+      <DependentUpon>201602151126540_CalendarViewUpdates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602151237350_ChangedCoachColourVariable.cs" />
+    <Compile Include="Migrations\201602151237350_ChangedCoachColourVariable.Designer.cs">
+      <DependentUpon>201602151237350_ChangedCoachColourVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602151807102_fixedDropdownMenus.cs" />
+    <Compile Include="Migrations\201602151807102_fixedDropdownMenus.Designer.cs">
+      <DependentUpon>201602151807102_fixedDropdownMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201602160916499_AddedRBGValues.cs" />
+    <Compile Include="Migrations\201602160916499_AddedRBGValues.Designer.cs">
+      <DependentUpon>201602160916499_AddedRBGValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604081925108_addedFeedbackChanges.cs" />
+    <Compile Include="Migrations\201604081925108_addedFeedbackChanges.Designer.cs">
+      <DependentUpon>201604081925108_addedFeedbackChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604082034382_changedMatchLayout.cs" />
+    <Compile Include="Migrations\201604082034382_changedMatchLayout.Designer.cs">
+      <DependentUpon>201604082034382_changedMatchLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604082248160_CalendarFixedAndAllChangesToUIImplemented.cs" />
+    <Compile Include="Migrations\201604082248160_CalendarFixedAndAllChangesToUIImplemented.Designer.cs">
+      <DependentUpon>201604082248160_CalendarFixedAndAllChangesToUIImplemented.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604100119150_UpdatedValidation.cs" />
+    <Compile Include="Migrations\201604100119150_UpdatedValidation.Designer.cs">
+      <DependentUpon>201604100119150_UpdatedValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604102034420_addedDateofBirth.cs" />
+    <Compile Include="Migrations\201604102034420_addedDateofBirth.Designer.cs">
+      <DependentUpon>201604102034420_addedDateofBirth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604102051057_addedDateofBirthList.cs" />
+    <Compile Include="Migrations\201604102051057_addedDateofBirthList.Designer.cs">
+      <DependentUpon>201604102051057_addedDateofBirthList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604102234263_addedDateofBirth3IndividualInts.cs" />
+    <Compile Include="Migrations\201604102234263_addedDateofBirth3IndividualInts.Designer.cs">
+      <DependentUpon>201604102234263_addedDateofBirth3IndividualInts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110109389_addedDateofBirth3IndividualInts1.cs" />
+    <Compile Include="Migrations\201604110109389_addedDateofBirth3IndividualInts1.Designer.cs">
+      <DependentUpon>201604110109389_addedDateofBirth3IndividualInts1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110110550_addedDateofBirth3IndividualInts2.cs" />
+    <Compile Include="Migrations\201604110110550_addedDateofBirth3IndividualInts2.Designer.cs">
+      <DependentUpon>201604110110550_addedDateofBirth3IndividualInts2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604110116360_newest.cs" />
+    <Compile Include="Migrations\201604110116360_newest.Designer.cs">
+      <DependentUpon>201604110116360_newest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Coach.cs" />
+    <Compile Include="Models\Court.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Match.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Interfaces\TestClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\TestClass.Designer.cs">
+      <DependentUpon>TestClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabbedMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabbedMenu.Designer.cs">
+      <DependentUpon>TabbedMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeManager.cs" />
+    <Compile Include="Validation\Validation.cs" />
+    <Compile Include="Validation\ValidationCustomer.cs" />
+    <EmbeddedResource Include="Interfaces\Add Coach.resx">
+      <DependentUpon>Add Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Add Customer Details.resx">
+      <DependentUpon>Add Customer Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\DeleteCustomer.resx">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Logging.resx">
+      <DependentUpon>Logging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\RemoveCoach.resx">
+      <DependentUpon>RemoveCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\TestClass.resx">
+      <DependentUpon>TestClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602140810587_initialCreation.resx">
+      <DependentUpon>201602140810587_initialCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602140829301_initialCreation-addedplayerstomatch.resx">
+      <DependentUpon>201602140829301_initialCreation-addedplayerstomatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602140854117_addedCourtNumber.resx">
+      <DependentUpon>201602140854117_addedCourtNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602140903302_removedCourtId.resx">
+      <DependentUpon>201602140903302_removedCourtId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602140932310_pleaseworkCourtNumber.resx">
+      <DependentUpon>201602140932310_pleaseworkCourtNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602141157242_fixedAddMatch.resx">
+      <DependentUpon>201602141157242_fixedAddMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602141500315_AddedMatchTimeVariables.resx">
+      <DependentUpon>201602141500315_AddedMatchTimeVariables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602151035414_removeddatetime.resx">
+      <DependentUpon>201602151035414_removeddatetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602151126540_CalendarViewUpdates.resx">
+      <DependentUpon>201602151126540_CalendarViewUpdates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602151237350_ChangedCoachColourVariable.resx">
+      <DependentUpon>201602151237350_ChangedCoachColourVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602151807102_fixedDropdownMenus.resx">
+      <DependentUpon>201602151807102_fixedDropdownMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201602160916499_AddedRBGValues.resx">
+      <DependentUpon>201602160916499_AddedRBGValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604081925108_addedFeedbackChanges.resx">
+      <DependentUpon>201604081925108_addedFeedbackChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604082034382_changedMatchLayout.resx">
+      <DependentUpon>201604082034382_changedMatchLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604082248160_CalendarFixedAndAllChangesToUIImplemented.resx">
+      <DependentUpon>201604082248160_CalendarFixedAndAllChangesToUIImplemented.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604100119150_UpdatedValidation.resx">
+      <DependentUpon>201604100119150_UpdatedValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604102034420_addedDateofBirth.resx">
+      <DependentUpon>201604102034420_addedDateofBirth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604102051057_addedDateofBirthList.resx">
+      <DependentUpon>201604102051057_addedDateofBirthList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604102234263_addedDateofBirth3IndividualInts.resx">
+      <DependentUpon>201604102234263_addedDateofBirth3IndividualInts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110109389_addedDateofBirth3IndividualInts1.resx">
+      <DependentUpon>201604110109389_addedDateofBirth3IndividualInts1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110110550_addedDateofBirth3IndividualInts2.resx">
+      <DependentUpon>201604110110550_addedDateofBirth3IndividualInts2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604110116360_newest.resx">
+      <DependentUpon>201604110116360_newest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TabbedMenu.resx">
+      <DependentUpon>TabbedMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajax-loader.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
