@@ -46,24 +46,9 @@ namespace Project
                     }
                 }
             }
-
-            //List<string> coachesColors = coaches.Select(x => x.CoachColor).ToList();
-            //foreach (var newCoach in coachesColors)
-            //{
-            //    //coachColor = newCoach.ToString().Split('[', ']');
-            //    coachColorString = coachColor[0];
-            //}
             foreach (var ma in matches)
             {
                 CellID c = GetCellByMatch(ma);
-                //coachColor[] = co.CoachColor.Split(':');
-                //{
-                //        for (int i = 0; i < matches.Count(); i++)
-                //        {
-                //            if (co.CoachID == ma.PlayerList[i].playerId)
-                //            {
-
-                //co.player.playerId = ma.PlayerList.Any( // if statement is true, get RGB from coach
                 if (ma.CoachInMatch != null)
                 {
                     if (ma.CoachInMatch.player != null)
@@ -96,17 +81,6 @@ namespace Project
 
                 }
             }
-            //if (ma.PlayerList != null)
-            //    if (ma.PlayerList.Any(x => x.playerId == co.player.playerId))
-            //    {
-            //        dataGridView1.Rows[c.Row].Cells[c.Column].Value = co.player.Firstname;
-            //    }
-            //    else
-            //    {
-            //        //MessageBox.Show("not found");
-            //    }
-            //
-
 
         }
 
@@ -797,20 +771,22 @@ namespace Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            this.dataGridView1.Rows.Add("9am");
-            this.dataGridView1.Rows.Add("10am");
-            this.dataGridView1.Rows.Add("11am");
-            this.dataGridView1.Rows.Add("12am");
-            this.dataGridView1.Rows.Add("1pm");
-            this.dataGridView1.Rows.Add("2pm");
-            this.dataGridView1.Rows.Add("3pm");
-            this.dataGridView1.Rows.Add("4pm");
-            this.dataGridView1.Rows.Add("5pm");
-            this.dataGridView1.Rows.Add("6pm");
-            this.dataGridView1.Rows.Add("7pm");
-            this.dataGridView1.Rows.Add("8pm");
-            this.dataGridView1.Rows.Add("9pm");
+            for (int i = 9; i < 21; i++)
+            {
+                this.dataGridView1.Rows.Add(i + ":00");
+            }
+            //this.dataGridView1.Rows.Add("10am");
+            //this.dataGridView1.Rows.Add("11am");
+            //this.dataGridView1.Rows.Add("12am");
+            //this.dataGridView1.Rows.Add("1pm");
+            //this.dataGridView1.Rows.Add("2pm");
+            //this.dataGridView1.Rows.Add("3pm");
+            //this.dataGridView1.Rows.Add("4pm");
+            //this.dataGridView1.Rows.Add("5pm");
+            //this.dataGridView1.Rows.Add("6pm");
+            //this.dataGridView1.Rows.Add("7pm");
+            //this.dataGridView1.Rows.Add("8pm");
+            //this.dataGridView1.Rows.Add("9pm");
         }
 
 

@@ -160,3 +160,46 @@ E:\Project Versions\One of these\Or this Project\Project\Project\obj\Debug\Proje
 E:\Project Versions\One of these\Or this Project\Project\Project\obj\Debug\Project.Migrations.addedDateofBirth3IndividualInts2.resources
 E:\Project Versions\One of these\Or this Project\Project\Project\obj\Debug\Project.Migrations.newest.resources
 E:\Project Versions\One of these\Or this Project\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\Project.exe.config
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.exe
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.pdb
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\Project.exe
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\Project.pdb
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\EntityFramework.dll
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\EntityFramework.xml
+C:\Users\Ian\Desktop\FinalYearProject\Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Add_Coach.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Add_Customer_Details.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Calendar.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Interfaces.DeleteCustomer.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Logging.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Menu.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Interfaces.RemoveCoach.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.TestClass.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.initialCreation.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.initialCreationaddedplayerstomatch.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedCourtNumber.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.removedCourtId.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.pleaseworkCourtNumber.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.fixedAddMatch.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.AddedMatchTimeVariables.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.removeddatetime.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.CalendarViewUpdates.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.ChangedCoachColourVariable.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.fixedDropdownMenus.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.AddedRBGValues.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedFeedbackChanges.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.changedMatchLayout.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.CalendarFixedAndAllChangesToUIImplemented.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.UpdatedValidation.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedDateofBirth.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedDateofBirthList.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedDateofBirth3IndividualInts.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedDateofBirth3IndividualInts1.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.addedDateofBirth3IndividualInts2.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Migrations.newest.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.TabbedMenu.resources
+C:\Users\Ian\Desktop\FinalYearProject\Project\obj\Debug\Project.csproj.GenerateResource.Cache
