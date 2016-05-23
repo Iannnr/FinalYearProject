@@ -14,25 +14,25 @@ namespace Project
             switch (index)
             {
                 case 0:
-                    x = new int[2] { 498, 445 };
+                    x = new int[2] { 600, 445 };
                     break;
                 case 1:
-                    x = new int[2] { 498, 500 };
+                    x = new int[2] { 600, 500 };
                     break;
                 case 2:
-                    x = new int[2] { 498, 308 };
+                    x = new int[2] { 600, 308 };
                     break;
                 case 3:
                     x = new int[2] { 600, 308 };
                     break;
                 case 4:
-                    x = new int[2] { 498, 264 };
+                    x = new int[2] { 600, 264 };
                     break;
                 case 5:
-                    x = new int[2] { 498, 174 };
+                    x = new int[2] { 600, 174 };
                     break;
                 case 6:
-                    x = new int[2] { 498, 506 };
+                    x = new int[2] { 600, 506 };
                     break;
                 default:
                     x = new int[2] { 600, 398 };
